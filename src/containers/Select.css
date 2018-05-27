@@ -1,0 +1,41 @@
+.Select {
+    width: 300px;
+    margin: auto;
+}
+
+.Select-control {
+    background-color: transparent;
+    border-color: #323347;
+    border-width: 2px;
+}
+
+.Select.is-focused:not(.is-open) > .Select-control {
+    background-color: #05021d;
+}
+
+.Select-menu-outer {
+    border-color: #323347;
+    border-width: 3px;
+}
+
+.Select.is-focused > .Select-control {
+    background-color: transparent;
+    border-color: #323347;
+    border-width: 2px;
+}
+
+.VirtualSelect {
+}
+
+.VirtualizedSelectOption {
+    background-color: #05021d;
+}
+.VirtualizedSelectFocusedOption {
+    background-color: #323347;
+}
+.VirtualizedSelectSelectedOption {
+    font-weight: bold;
+}
+.Select input {
+    color: #fcfcff;
+}

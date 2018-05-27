@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400');
+
+body {
+    background-color: #05021d;
+    color: #fcfcff;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+}
+
+.App {
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr) ) ;
+}
+
+article {
+    justify-self: center;
+    background-color: #323347;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 10px;
+    /*border-radius: 4px;*/
+    width: 300px;
+    padding: 0px;
+    position: relative;
+}
+
+article:hover {
+    background-color: #4a4c68;
+}
+
+article figure {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+article img {
+    width: 40px;
+}
+
+.coin-price {
+    text-align: right;
+    white-space: nowrap;
+    font-size: 20px;
+    margin: auto 0;
+    font-weight: 100;
+}
+
+.coin-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.coin-list > span {
+    vertical-align: center;
+    margin: auto 10px;
+}
+
+button {
+    background-color: #323347;
+    color: #fcfcff;
+    padding: 10px 15px;
+    border: 0;
+    height: 40px;
+    align-self: center;
+    margin-top: 0px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #4a4c68;
+}
+
+.x {
+    position: absolute;
+    float: right;
+    top: -7px;
+    left: -7px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 0px solid #fff;
+    background-color: #a53933;
+    border-radius: 50%;
+}
+.x::before, .x::after {
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 12px;
+    height: 3px;
+    content: "";
+    background-color: #eef5df;
+}
+.x::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.x::after {
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
