@@ -1,6 +1,10 @@
 # Crypto Tracker
 A simple cryptocurrency price app built with React.
 
+## Demo
+
+Live demo: [https://hyahfoufi.github.io/Crypto-Tracker](https://hyahfoufi.github.io/Crypto-Tracker)
+
 ## How to test
 
 In the project directory, you can run:

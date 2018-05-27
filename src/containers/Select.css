@@ -15,7 +15,8 @@
 .Select-menu-outer {
     border-color: #323347;
     border-width: 3px;
-    background-color: #05021d;box-shadow: 0 4px 0 #323347;
+    background-color: #05021d;
+    box-shadow: 0 4px 0 #323347;
 }
 
 .Select.is-focused > .Select-control {
