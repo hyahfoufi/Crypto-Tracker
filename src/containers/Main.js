@@ -21,9 +21,14 @@ class Main extends Component {
 
   // If a list of coins is stored in local storage, use it
   componentDidMount() {
-    const coinList = JSON.parse(localStorage.getItem("coinList"));
-    if (coinList) {
-      this.setState({coinsToShow: coinList});
+    try {
+      const coinList = JSON.parse(localStorage.getItem("coinList"));
+      if (coinList) {
+        this.setState({coinsToShow: coinList});
+      }
+    } catch (e) {
+      console.log("Clearing local storage due to corruption.");
+      localStorage.removeItem("coinList");
     }
   }
 
