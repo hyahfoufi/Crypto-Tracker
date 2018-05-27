@@ -6,7 +6,6 @@
 .Select-control {
     background-color: transparent;
     border-color: #323347;
-    border-width: 2px;
 }
 
 .Select.is-focused:not(.is-open) > .Select-control {
@@ -16,6 +15,7 @@
 .Select-menu-outer {
     border-color: #323347;
     border-width: 3px;
+    background-color: #05021d;box-shadow: 0 4px 0 #323347;
 }
 
 .Select.is-focused > .Select-control {
@@ -39,3 +39,4 @@
 .Select input {
     color: #fcfcff;
 }
+
